@@ -9,21 +9,36 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="css/styles.css">
     <title>Ristorante Con Fusion</title>
 </head>
 
 <body>
-
-    <header sclass="jumbotron">
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="container">
-            <div>
-                <div class="row">
+            <a class="navbar-brand" href="#">Ristorante Con Fusion</a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./aboutus.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row col-12 col-sm-6">
+                <div>
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our
                         lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="row">
+                <div class="row col-12 col-sm">
                 </div>
             </div>
         </div>
@@ -31,6 +46,10 @@
 
     <div class="container">
         <div class="row">
+            <ol class="col-12 breadcrumb">
+                <li class="breadcrumb-item active">Home</li>
+                <li class="breadcrumb-item"><a href="./aboutus.html">About Us</a></li>
+            </ol>
             <div>
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
@@ -111,7 +130,7 @@
     </footer>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
- s   
+    s
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
